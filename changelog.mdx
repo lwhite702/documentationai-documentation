@@ -1,0 +1,136 @@
+---
+title: Changelog
+description: Stay informed about the latest releases, new features, and improvements in Klutr.
+---
+
+## Recent Updates
+
+Klutr releases updates regularly to enhance your documentation experience. Check this changelog to see what's new, including feature additions, bug fixes, and performance improvements. Each release includes migration notes when needed.
+
+<Callout kind="info">
+  Subscribe to our RSS feed or join the community Discord for instant release notifications.
+</Callout>
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added real-time collaboration for teams working on documentation pages
+- Introduced advanced search with filters for tags and sections
+- New version history viewer with diff comparisons
+
+## Improvements
+
+- Enhanced page rendering speed by `>30%`
+- Better mobile responsiveness for all themes
+- Updated UI components with brand color `#3B82F6`
+
+## Bug Fixes
+
+- Fixed export to PDF failing on large documents
+- Resolved authentication token refresh issues
+- Corrected table editing glitches in the visual editor
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Integrated Mermaid diagram support for flowcharts and sequences
+- Customizable sidebar navigation with drag-and-drop reordering
+- API endpoints for programmatic page management
+
+## Bug Fixes
+
+- Patched security vulnerability in file upload handling
+- Fixed preview pane not updating after content changes
+- Improved error handling for invalid YAML frontmatter
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Initial release of Klutr Documentation platform
+- Visual MDX editor with live preview
+- Full-text search across all project docs
+- Theme customization including brand colors
+
+## Breaking Changes
+
+- Updated configuration format – review `klutr.config.js` for migration
+- Removed legacy shortcodes in favor of native MDX components
+
+</Update>
+
+## Upgrading to the Latest Version
+
+Follow these steps to update your Klutr instance safely.
+
+<Steps>
+  <Step title="Backup Your Data" icon="database">
+
+    Create a full backup of your project files and database.
+
+  </Step>
+  <Step title="Update Package" icon="package">
+
+    Use your preferred package manager.
+
+    <CodeGroup tabs="npm,yarn">
+      ```bash
+      npm install klutr@latest
+      ```
+      ```bash
+      yarn add klutr@latest
+      ```
+    </CodeGroup>
+
+  </Step>
+  <Step title="Run Migrations" icon="settings">
+
+    Execute database migrations if applicable.
+
+    ```bash
+    npx klutr migrate
+    ```
+
+  </Step>
+  <Step title="Restart Server" icon="refresh-cw">
+
+    Restart your Klutr server and verify everything works.
+
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Always test updates in a staging environment first. Check release notes for any breaking changes.
+</Callout>
+
+## Upcoming Changes
+
+<Expandable title="v1.3.0 Preview (Planned for November 2024)" default-open="false">
+
+Get a sneak peek at what's coming next:
+
+- AI-assisted content generation for docs
+- Native GitHub integration for version control
+- Advanced analytics dashboard for page views
+
+Stay tuned for the beta release.
+
+</Expandable>
+
+<Columns cols={3}>
+  <Card title="Quickstart" icon="rocket" href="/quickstart">
+    Get started with Klutr in minutes.
+  </Card>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure your documentation space.
+  </Card>
+  <Card title="Customization" icon="settings" href="/configuration">
+    Tailor Klutr to your needs.
+  </Card>
+</Columns>
